@@ -3,7 +3,7 @@
 ## คำอธิบาย
 โปรเจกต์นี้เป็นแอปพลิเคชัน Full Stack ที่พัฒนาด้วย React (Vite) และ Express.js พร้อมระบบยืนยันตัวตนแบบ JWT
 
-## การใช้งาน client,admin
+### การใช้งาน client,admin
 1.cd server && npm install && npm run dev
 2.cd client && npm install && npm run dev
 3.cd admin && npm install && npm run dev
