@@ -1,0 +1,46 @@
+.about-container {
+  max-width: 800px; /* ขยายความกว้างขึ้นเล็กน้อย */
+  margin: 60px auto;
+  padding: 40px; /* เพิ่ม padding */
+  background: #fdfdfd; /* สีพื้นหลังสว่างขึ้น */
+  border-radius: 12px; /* เพิ่มความโค้งมน */
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* เพิ่มเงาให้ดูมีมิติ */
+  line-height: 1.8; /* ปรับระยะห่างระหว่างบรรทัดให้อ่านง่ายขึ้น */
+}
+
+.about-container h2 {
+  color: #1976d2; /* สีเดียวกับ H1 ใน Home */
+  margin-bottom: 25px; /* เพิ่มระยะห่าง */
+  font-size: 2.2rem; /* ขนาดใหญ่ขึ้น */
+  font-weight: 700; /* ตัวหนาขึ้น */
+}
+
+.about-container p {
+  color: #444; /* สีตัวอักษรอ่อนลงเล็กน้อย */
+  font-size: 1.15rem; /* ขนาดตัวอักษรใหญ่ขึ้นเล็กน้อย */
+  margin-bottom: 20px; /* เพิ่มระยะห่างระหว่างย่อหน้า */
+}
+
+.about-container p:last-child {
+  margin-bottom: 0; /* ย่อหน้าสุดท้ายไม่มี margin-bottom */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .about-container {
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 8px;
+  }
+
+  .about-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+
+  .about-container p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+}

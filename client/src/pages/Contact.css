@@ -1,0 +1,120 @@
+.contact-container {
+  max-width: 600px; /* เพิ่มความกว้างขึ้นเล็กน้อย */
+  margin: 60px auto;
+  padding: 40px; /* เพิ่ม padding */
+  background: #fdfdfd; /* สีพื้นหลังสว่างขึ้น */
+  border-radius: 12px; /* เพิ่มความโค้งมน */
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* เพิ่มเงาให้ดูมีมิติ */
+}
+
+.contact-container h2 {
+  color: #1976d2; /* สีเดียวกับ H1 ใน Home */
+  margin-bottom: 15px;
+  font-size: 2.2rem; /* ขนาดใหญ่ขึ้น */
+  font-weight: 700;
+}
+
+.contact-intro {
+  color: #444;
+  font-size: 1.1rem;
+  margin-bottom: 30px; /* เพิ่มระยะห่างจากฟอร์ม */
+  line-height: 1.6;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* เพิ่มระยะห่างระหว่าง input */
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 15px; /* เพิ่ม padding */
+  border: 1px solid #ddd; /* สีขอบอ่อนลง */
+  border-radius: 8px; /* โค้งมนขึ้น */
+  font-size: 1rem;
+  color: #444;
+  width: 100%; /* ให้เต็มความกว้าง */
+  box-sizing: border-box; /* รวม padding และ border ในความกว้าง */
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  background: #fff; /* พื้นหลังขาว */
+}
+
+/* ปรับปรุงเฉพาะ textarea */
+.contact-form textarea {
+  min-height: 150px; /* กำหนดความสูงขั้นต่ำให้ชัดเจน */
+  resize: vertical; /* อนุญาตให้ปรับขนาดแนวตั้งได้ */
+  line-height: 1.6; /* ปรับ line-height ให้อ่านง่ายขึ้น */
+  background: #fff; /* พื้นหลังขาว */
+}
+
+/* Placeholder text color */
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #444; /* ทำให้สี placeholder ชัดเจนขึ้นแต่ไม่ทึบเกินไป */
+  opacity: 1; /* สำหรับ Firefox ที่อาจมี opacity เริ่มต้น */
+}
+
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #1976d2; /* เปลี่ยนสีขอบเมื่อ focus */
+  box-shadow: 0 0 0 3px rgba(25, 118, 210, 0.2); /* เพิ่มเงาเมื่อ focus */
+  outline: none; /* ลบ outline เริ่มต้นของ browser */
+}
+
+.contact-form button {
+  background: #1976d2; /* สีน้ำเงินหลัก */
+  color: #fff;
+  border: none;
+  padding: 15px 0; /* เพิ่ม padding */
+  border-radius: 8px; /* โค้งมนขึ้น */
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form button:hover {
+  background: #1565c0; /* สีเข้มขึ้นเมื่อ hover */
+  transform: translateY(-2px); /* ยกขึ้นเล็กน้อย */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* เพิ่มใน Contact.css */
+.input-error {
+  border: 1.5px solid red !important;
+}
+.error-text {
+  color: red;
+  font-size: 0.9em;
+  margin-bottom: 8px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .contact-container {
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 8px;
+  }
+
+  .contact-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+
+  .contact-intro {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form button {
+    padding: 10px;
+    font-size: 0.95rem;
+  }
+}
