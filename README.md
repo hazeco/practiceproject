@@ -30,9 +30,7 @@ cp .env.example .env
 
 4. แก้ไขไฟล์ .env และใส่ค่าต่างๆ:
 ```
-PORT=5000
-MONGO_URI=mongodb+srv://your-username:your-password@your-cluster.mongodb.net/your-database
-JWT_SECRET=your-super-secret-jwt-key
+
 ```
 
 5. รัน Server ในโหมด Development:
